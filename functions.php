@@ -150,3 +150,12 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+function add_image_responsive_class($content) {
+   global $post;
+   $pattern ="/<img(.*?)class=\"(.*?)\"(.*?)>/i";
+   $replacement = '<img$1class="$2 img-responsive"$3>';
+   $content = preg_replace($pattern, $replacement, $content);
+   return $content;
+}
+add_filter('the_content', 'add_image_responsive_class');

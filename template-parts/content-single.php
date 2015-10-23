@@ -27,9 +27,5 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php ouroboros_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
 

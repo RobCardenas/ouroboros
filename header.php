@@ -9,7 +9,8 @@
  * @package Ouroboros
  */
 
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -20,10 +21,11 @@
 <!-- Bootstrap and Custom CSS -->
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Cabin+Condensed:400,500,700' rel='stylesheet' type='text/css'>
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'ouroboros' ); ?></a>
 
@@ -37,7 +39,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#"></a>
+				<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
 			</div>
 
 			<?php

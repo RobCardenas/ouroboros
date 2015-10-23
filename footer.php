@@ -13,26 +13,26 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'ouroboros' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'ouroboros' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'ouroboros' ), 'ouroboros', '<a href="http://robcardenas.us" rel="designer">Rob Cardenas</a>' ); ?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
 
 <!-- Footer -->
 
-      <div class="page-footer">
-        <div class="container">
-           <div class="col-xs-12 col-sm-12 col-md-12">
-              <p class="text-center">&copy; MMXV ROB CARDENAS</p>
-           </div>
-         </div>
-      </div>
+  <div class="page-footer">
+    <div class="container">
+       <div class="col-xs-12 col-sm-12 col-md-12">
+       	<footer id="colophon" class="site-footer text-center" role="contentinfo">
+       		<div class="site-info">
+       			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'ouroboros' ) ); ?>"><?php printf( esc_html__( 'Powered by %s', 'ouroboros' ), 'WordPress' ); ?></a>
+       			<span class="sep"> | </span>
+       			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'ouroboros' ), 'Ouroboros', '<a href="http://robcardenas.us" rel="designer">Rob Cardenas</a>' ); ?>
+       		</div><!-- .site-info -->
+       	</footer><!-- #colophon -->
+       </div>
+     </div>
+  </div>
       
       
 <!-- End Footer -->
